@@ -1,94 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shashi Sharma Carpenter Mistri</title>
+<title>Shashi Sharma Carpenter | Premium Woodwork</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
-header {
-    background: #2f5d3a;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+body{
+background:#f5f7fa;
+scroll-behavior:smooth;
 }
-section {
-    padding: 40px 20px;
-    text-align: center;
+
+/* NAVBAR */
+nav{
+background:linear-gradient(90deg,#1f4037,#99f2c8);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
-h2 {
-    color: #2f5d3a;
+
+nav h2{
+color:white;
 }
-.services div {
-    background: white;
-    margin: 10px auto;
-    padding: 15px;
-    max-width: 400px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:600;
 }
-.contact {
-    background: #e8f0e9;
+
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://picsum.photos/1200/700?woodwork');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:120px 20px;
 }
-footer {
-    background: #2f5d3a;
-    color: white;
-    padding: 15px;
-    text-align: center;
+
+.hero h1{
+font-size:38px;
+margin-bottom:10px;
 }
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.hero button{
+padding:12px 30px;
+margin:10px;
+border:none;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+}
+
+.call-btn{
+background:#ff9800;
+color:white;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:white;
+}
+
+/* SECTION */
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+margin-bottom:25px;
+color:#1f4037;
+}
+
+/* SERVICES */
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.service-card{
+background:white;
+width:280px;
+padding:25px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.07);
+}
+
+/* REVIEWS */
+.reviews{
+background:#e8f5e9;
+}
+
+.review-card{
+background:white;
+padding:20px;
+margin:15px auto;
+max-width:400px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact{
+background:#f0f4f8;
+}
+
+/* FOOTER */
+footer{
+background:#1f4037;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* FLOATING BUTTONS */
+.float-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.float-btn a{
+text-decoration:none;
+padding:12px 18px;
+border-radius:50px;
+color:white;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.call-float{
+background:#ff9800;
+}
+
+.whatsapp-float{
+background:#25D366;
 }
 </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Shashi Sharma Carpenter Mistri</h1>
-    <p>Strong Woodwork, Trusted Service in Laxmisagar</p>
-</header>
+<nav>
+<h2>SS Carpenter</h2>
+<div>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<section>
-    <h2>About Us</h2>
-    <p>Mr. Shashi Kumar is an experienced carpenter providing high-quality woodwork services in Laxmisagar and nearby areas. We specialize in custom furniture, repair work, and modern wooden designs.</p>
+<section class="hero" id="home">
+<h1>Shashi Sharma Carpenter Mistri</h1>
+<p>Modern Furniture | Modular Kitchen | Repair & Renovation</p>
+<button class="call-btn" onclick="location.href='tel:8677805602'">Call Now</button>
+<button class="whatsapp-btn" onclick="window.open('https://wa.me/918677805602')">WhatsApp</button>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <div>Furniture Making</div>
-    <div>Door & Window Fitting</div>
-    <div>Modular Kitchen Work</div>
-    <div>Wooden Almirah & Bed</div>
-    <div>Repair & Renovation Work</div>
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service-card">Furniture Making</div>
+<div class="service-card">Modular Kitchen Design</div>
+<div class="service-card">Door & Window Fitting</div>
+<div class="service-card">Wooden Bed & Almirah</div>
+<div class="service-card">Office Furniture</div>
+<div class="service-card">Repair & Renovation</div>
+</div>
 </section>
 
-<section class="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Owner:</strong> Mr Shashi Kumar</p>
-    <p><strong>Phone:</strong> 8407855220</p>
-    <p><strong>Email:</strong> rishisharma84078@gmail.com</p>
-    <p><strong>Address:</strong> Near Gas Gudam, Gas Gudam Chhapki Road, Laxmisagar – 846009</p>
+<section id="gallery">
+<h2>Our Work Gallery</h2>
+<div class="gallery">
+<script>
+for(let i=1;i<=20;i++){
+document.write(`<img src="https://picsum.photos/seed/${i}/600/400">`)
+}
+</script>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+<h2>Customer Reviews</h2>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐ <br>
+"Bahut hi accha kaam kiya, finishing professional hai."
+<br>– Ramesh Kumar
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐ <br>
+"Time pe delivery aur quality best."
+<br>– Amit Singh
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐ <br>
+"Darbhanga me sabse trusted carpenter."
+<br>– Sunita Devi
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><strong>Owner:</strong> Mr. Shashi Kumar</p>
+<p><strong>Phone:</strong> 8677805602 / 8407855220</p>
+<p><strong>Location:</strong> Laxmisagar, Darbhanga</p>
+
+<br>
+
+<iframe 
+src="https://www.google.com/maps?q=Darbhanga&output=embed"
+width="100%" height="300" style="border:0;" allowfullscreen="">
+</iframe>
+
 </section>
 
 <footer>
-    © 2026 Shashi Sharma Carpenter Mistri | All Rights Reserved
+© 2026 Shashi Sharma Carpenter | All Rights Reserved
 </footer>
 
-<a class="whatsapp-btn" href="https://wa.me/918407855220" target="_blank">
-Chat on WhatsApp
-</a>
+<div class="float-btn">
+<a href="tel:8677805602" class="call-float">Call</a>
+<a href="https://wa.me/918677805602" class="whatsapp-float">WhatsApp</a>
+</div>
 
 </body>
-  </html>
+</html>
