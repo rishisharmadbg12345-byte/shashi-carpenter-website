@@ -1,82 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shashi Sharma Carpenter | Furniture Work in Darbhanga</title>
+<title>Shashi Sharma Carpenter | Best Carpenter in Darbhanga</title>
 
-<meta name="description" content="Shashi Sharma Carpenter in Darbhanga. Modular kitchen, wooden bed, sofa, wardrobe, furniture work and repair. Call now for best carpenter service.">
+<meta name="description" content="Professional carpenter service in Darbhanga. Modular kitchen, wooden bed, sofa, wardrobe, furniture work and repair. Call now.">
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial;
-background:#f5f5f5;
 }
 
-header{
-background:#0f5132;
+body{
+background:#f4f6f9;
+}
+
+/* NAVBAR */
+
+nav{
+background:#1f4037;
 color:white;
-padding:15px;
-text-align:center;
-font-size:22px;
+display:flex;
+justify-content:space-between;
+padding:15px 25px;
+align-items:center;
+}
+
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
 font-weight:bold;
 }
 
+/* HERO */
+
 .hero{
-background:#e9ecef;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("https://images.unsplash.com/photo-1582582494700-9c6b3c46f3b3");
+background-size:cover;
+background-position:center;
+color:white;
 text-align:center;
-padding:60px 20px;
+padding:120px 20px;
 }
 
 .hero h1{
+font-size:38px;
 margin-bottom:10px;
 }
 
+.hero p{
+margin-bottom:20px;
+}
+
 .btn{
-padding:12px 22px;
-border-radius:25px;
-text-decoration:none;
+padding:12px 25px;
+border-radius:30px;
 color:white;
+text-decoration:none;
 margin:8px;
 display:inline-block;
+font-weight:bold;
 }
 
 .call{background:#ff9800;}
 .whatsapp{background:#25D366;}
 
-.section{
-padding:30px;
+/* SECTIONS */
+
+section{
+padding:60px 20px;
 text-align:center;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
+h2{
+margin-bottom:25px;
+color:#1f4037;
 }
 
-.service{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 5px rgba(0,0,0,0.2);
+/* SERVICES */
+
+.services{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
+
+.card{
+background:white;
+padding:20px;
+width:220px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:10px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
 }
 
 .gallery img{
 width:100%;
+height:180px;
+object-fit:cover;
 border-radius:10px;
 }
+
+/* REVIEWS */
 
 .review{
 background:white;
@@ -84,11 +126,13 @@ padding:15px;
 margin:10px auto;
 max-width:400px;
 border-radius:10px;
-box-shadow:0 0 5px rgba(0,0,0,0.2);
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
+/* FOOTER */
+
 footer{
-background:#0f5132;
+background:#1f4037;
 color:white;
 text-align:center;
 padding:20px;
@@ -100,103 +144,96 @@ padding:20px;
 
 <body>
 
-<header>
-SS Carpenter | Shashi Sharma
-</header>
+<nav>
 
+<h2>SS Carpenter</h2>
+
+<div>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
 
 <div class="hero">
 
 <h1>Shashi Sharma Carpenter</h1>
-<p>Modular Kitchen | Bed | Sofa | Wardrobe | Furniture Work</p>
 
-<a class="btn call" href="tel:8677805602">Call Now</a>
+<p>Furniture | Modular Kitchen | Wardrobe | Woodwork</p>
 
-<a class="btn whatsapp" href="https://wa.me/918677805602">WhatsApp</a>
+<a href="tel:8677805602" class="btn call">Call Now</a>
+
+<a href="https://wa.me/918677805602" class="btn whatsapp">WhatsApp</a>
 
 </div>
 
-
-<div class="section">
+<section id="services">
 
 <h2>Our Services</h2>
 
 <div class="services">
 
-<div class="service">Wooden Bed</div>
-<div class="service">Modular Kitchen</div>
-<div class="service">Sofa Work</div>
-<div class="service">Wardrobe</div>
-<div class="service">Door & Window</div>
-<div class="service">Office Furniture</div>
-<div class="service">Furniture Repair</div>
-<div class="service">Interior Woodwork</div>
+<div class="card">Wooden Bed</div>
+<div class="card">Modular Kitchen</div>
+<div class="card">Sofa Work</div>
+<div class="card">Wardrobe Design</div>
+<div class="card">Door & Window</div>
+<div class="card">Office Furniture</div>
 
 </div>
 
-</div>
+</section>
 
-
-<div class="section">
+<section id="gallery">
 
 <h2>Our Work Gallery</h2>
 
 <div class="gallery">
 
-<script>
-
-for(let i=1;i<=60;i++){
-
-document.write('<img src="https://source.unsplash.com/400x300/?furniture,wood,carpenter&sig='+i+'">')
-
-}
-
-</script>
+<img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+<img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0">
+<img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed">
+<img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3">
+<img src="https://images.unsplash.com/photo-1582582494700-9c6b3c46f3b3">
+<img src="https://images.unsplash.com/photo-1507089947367-19c1da9775ae">
+<img src="https://images.unsplash.com/photo-1567016548736-0a0c67c5b5e0">
+<img src="https://images.unsplash.com/photo-1616593969747-4797dc75033e">
+<img src="https://images.unsplash.com/photo-1582582429416-7c3c6a1b0b7d">
+<img src="https://images.unsplash.com/photo-1598300053653-1c15d0b6c8b0">
 
 </div>
 
-</div>
+</section>
 
-
-<div class="section">
+<section id="reviews">
 
 <h2>Customer Reviews</h2>
 
-<script>
-
-const names=[
-"Ramesh Kumar","Amit Singh","Sunita Devi","Vikash Kumar","Rahul Sharma",
-"Pankaj Kumar","Neha Kumari","Sanjay Gupta","Anil Yadav","Deepak Kumar",
-"Ritu Singh","Manoj Sharma","Rajesh Kumar","Ashok Singh","Pooja Kumari",
-"Suresh Yadav","Kundan Kumar","Ravi Gupta","Alok Kumar","Prakash Singh",
-"Sonu Kumar","Mukesh Yadav","Anita Devi","Kiran Kumari","Shiv Kumar",
-"Vinod Singh","Ajay Kumar","Arvind Sharma","Rohit Kumar","Nisha Devi"
-];
-
-for(let i=0;i<names.length;i++){
-
-document.write('<div class="review">⭐⭐⭐⭐⭐<br>Bahut accha carpenter ka kaam kiya. Finishing professional hai.<br><b>'+names[i]+'</b></div>')
-
-}
-
-</script>
+<div class="review">⭐⭐⭐⭐⭐<br>Bahut accha furniture work. – Ramesh Kumar</div>
+<div class="review">⭐⭐⭐⭐⭐<br>Finishing professional hai. – Amit Singh</div>
+<div class="review">⭐⭐⭐⭐⭐<br>Time pe kaam complete. – Sunita Devi</div>
+<div class="review">⭐⭐⭐⭐⭐<br>Best carpenter service. – Rahul Kumar</div>
+<div class="review">⭐⭐⭐⭐⭐<br>Quality bahut acchi hai. – Pooja Kumari</div>
 
 <br>
 
 <a href="https://jsdl.in/RSL-BLB1772627118" class="btn call">Leave Review on Justdial</a>
 
-</div>
+</section>
 
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p><b>Phone:</b> 8677805602 / 8407855220</p>
+
+<p><b>Location:</b> Darbhanga, Bihar</p>
+
+</section>
 
 <footer>
-
-📞 8677805602 | 8407855220
-
-<br><br>
-
-📍 Laxmisagar, Darbhanga
-
-<br><br>
 
 © 2026 Shashi Sharma Carpenter
 
